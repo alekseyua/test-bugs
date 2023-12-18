@@ -6,8 +6,8 @@ export default function InputScreen() {
   const navigate = useNavigate();
   useEffect(()=>{
     tg.BackButton.show()
-    tg.BackButton.onClick(navigate('/test'))
-  })
+    tg.BackButton.onClick(()=>navigate('/test/main'))
+  },[])
   return (
     <div className={['container mt-8 grid grid-cols-1 justify-items-center']}>
     <div

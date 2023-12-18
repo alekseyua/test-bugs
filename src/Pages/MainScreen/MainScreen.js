@@ -12,7 +12,7 @@ export default function MainScreen() {
     >
       <div className='flex w-64 mt-8 text-blue-600/100 justify-between' >
       <Link to={'/input'}>screen input</Link>
-      <Link to={'/textarea'}>screen textarea</Link>
+      <Link to={'/test/textarea'}>screen textarea</Link>
       </div>
     </div>
     

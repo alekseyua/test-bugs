@@ -6,8 +6,8 @@ export default function TextareaScreen() {
   const navigate = useNavigate();
   useEffect(()=>{
     tg.BackButton.show()
-    tg.BackButton.onClick(navigate('/')) 
-  })
+    tg.BackButton.onClick(navigate('/main')) 
+  },[])
   return (
     <div className={['container mt-8 grid grid-cols-1 justify-items-center']}>
       <div
