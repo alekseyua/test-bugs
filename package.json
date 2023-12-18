@@ -14,10 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start-style": "npx tailwindcss -i ./src/index.scss -o ./public/output.css --watch",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npx tailwindcss -i ./src/index.scss -o ./public/output.css && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
