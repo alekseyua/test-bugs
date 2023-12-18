@@ -20,7 +20,7 @@ export default function TextareaScreen() {
           className='w-48 mt-2 border-indigo-500/100 ring-offset-2 ring-2 rounded-md hover:bg-sky-700'
           onClick={handlerClickGoto}
         >
-          Test link go to telegram chat
+          Test link go to telegram chat 
         </button>
       </div>
 
