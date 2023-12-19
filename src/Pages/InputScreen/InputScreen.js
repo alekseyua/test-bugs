@@ -1,29 +1,29 @@
 import React, { useEffect } from 'react'
-import { handlerClickGoto, tg } from '../../helters/helpers'
+import { handlerClickGoto, tg } from '../../helpers/helpers'
 import { useNavigate } from 'react-router'
 
 export default function InputScreen() {
   const navigate = useNavigate();
-  useEffect(()=>{
+  useEffect(() => {
     tg.BackButton.show()
-    tg.BackButton.onClick(()=>navigate('/main'))
-  },[])
+    tg.BackButton.onClick(() => navigate('/main'))
+  }, [])
   return (
     <div className={['container mt-8 grid grid-cols-1 justify-items-center']}>
-    <div
-      className='flex flex-col items-center'
-    >
-
-
-      <input type='text' className='rounded text-pink-500' />
-      <br />
-      <button
-        className='w-48 mt-2 border-indigo-500/100 ring-offset-2 ring-2 rounded-md hover:bg-sky-700'
-        onClick={handlerClickGoto}
+      <div
+        className='flex flex-col items-center'
       >
-        Test link go to telegram chat
-      </button>
-    </div>   
-  </div>
+
+
+        <input type='text' className='rounded text-pink-500' />
+        <br />
+        <button
+          className='w-48 mt-2 border-indigo-500/100 ring-offset-2 ring-2 rounded-md hover:bg-sky-700'
+          onClick={handlerClickGoto}
+        >
+          Test link go to telegram chat
+        </button>
+      </div>
+    </div>
   )
 }

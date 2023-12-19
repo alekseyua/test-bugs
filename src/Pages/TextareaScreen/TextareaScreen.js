@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
-import { handlerClickGoto, tg } from '../../helters/helpers'
+import { handlerClickGoto, tg } from '../../helpers/helpers'
 import { useNavigate } from 'react-router';
 
 export default function TextareaScreen() {
   const navigate = useNavigate();
-  useEffect(()=>{
+  useEffect(() => {
     tg.BackButton.show()
-    tg.BackButton.onClick( () => navigate('/main')) 
-  },[])
+    tg.BackButton.onClick(() => navigate('/main'))
+  }, [])
   return (
     <div className={['container mt-8 grid grid-cols-1 justify-items-center']}>
       <div
@@ -20,7 +20,7 @@ export default function TextareaScreen() {
           className='w-48 mt-2 border-indigo-500/100 ring-offset-2 ring-2 rounded-md hover:bg-sky-700'
           onClick={handlerClickGoto}
         >
-          Test link go to telegram chat 
+          Test link go to telegram chat
         </button>
       </div>
 
